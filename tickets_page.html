@@ -1,110 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!--Metadata-->
+        <title>Buy tickets, packages and annual pass - Pixel Park</title>
+        <meta charset='UTF-8'>
+        <meta name='description' content='Retro Games based theme park for families and people of all ages. Includes thrill rides, rides for younger
+            children, arcade games and games to win prizes.'>
+        <meta name='keywords' content='Theme Park, Gaming, Retro Games, Arcade Games, Fun Theme Park, Thrill Rides, Scary Rides, Family Theme Park'>
+        <meta name='author' content='Aydin Gursoy, Surbhi Jain, Elliot Lawson, Joao Lousada, Tamir Benatar'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <meta name='robots' content='noindex, nofollow'>    
+        <!--Add stylesheet when adding CSS-->
+    </head>
 
-<head>
-    <title>Buy tickets, packages and annual pass - Pixel Park</title>
-    <meta charset='UTF-8'>
-    <meta name='description' content='Retro Games based theme park for families and people of all ages. Includes thrill rides, rides for younger
-        children, arcade games and games to win prizes.'>
-    <meta name='keywords'
-        content='Theme Park, Gaming, Retro Games, Arcade Games, Fun Theme Park, Thrill Rides, Scary Rides, Family Theme Park'>
-    <meta name='author' content='Aydin Gursoy, Surbhi Jain, Elliot Lawson, Joao Lousada, Tamir Benatar'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name='robots' content='noindex, nofollow'>    
-    <link rel="stylesheet" href=" ">
-</head>
-
-<body>
-    <header>
+    <body>
+        <!--Code copied from homepage -->
+        <!--Navigation Bar-->
         <nav>
             <img src="Images/Logo.png" id="logo" alt="Pixel Park Logo" width="200">
             <p id="opening-times">Opening Times Today: 9am - 10pm</p>
             <ul id="nav-buttons-list">
-                <li><a><button class="nav-button">Home</button></a></li>
-                <li><a><button class="nav-button">Attractions</button></a></li>
-                <li><a><button class="nav-button">About & Contact</button></a></li>
-                <li><a><button class="nav-button">Buy Now</button></a></li>
+                <!--Aren't clickable due to no links but will be clickable when link is added-->
+                <li><a class="nav-button">Home</a></li>
+                <li><a class="nav-button">Attractions</a></li>
+                <li><a class="nav-button">About & Contact</a></li>
+                <li><a class="nav-button">Buy Now</a></li>
             </ul>
         </nav>
-    </header>
 
-    <div class="ticket_page_body">
-        <div class = "ticket_page_title">
-            <h1>Buy tickets, packages and annual pass</h1>
+        <!-- Buy tickets, passes and packages section with 'Buy now' buttons -->
+        <div class="ticket-page-body">
+            <div class = "ticket-page-title">
+                <h1>Buy tickets, packages and annual pass</h1>
+            </div>
+
+            <div class="ticket-container">
+                <div class="ticket">
+                    <img src="Images/annual-pass.png" id="annual-pass-image" alt="Annual Pass image" width="150">
+                    <h3>Annual Pass</h3>
+                    <p>Unlimited visits during all seasons</p>
+                    <p>From £450.00/Year</p>
+                    <ul>
+                        <li>Free entrance</li>
+                        <li>No ride tickets for kids aged 7 & under </li>
+                        <li>20% off ride tickets and select dining</li>
+                    </ul>
+                <!--Isn't clickable due to no links-->
+                <button class="button"> Buy Now</button>
+                </div>
+
+                <div class="ticket">
+                    <img src="Images/package-pass.png" id="package-pass-image" alt="Package Pass image" width="150">
+                    <h3>Overnight Stays</h3>
+                    <p>Exclusive benefits for resort guests</p>
+                    <p>From £650.00/Night</p>
+                    <ul>
+                        <li>Priority access to the park and rides</li>
+                        <li>Complimentary transportation</li>
+                        <li>Includes entrance and ride pass</li>
+                        <li>15% off at select dining</li>
+                    </ul>
+                    <!--Isn't clickable due to no links-->
+                    <button class="button"> Buy Now</button>
+                </div>
+
+                <div class="ticket">
+                    <img src="Images/day-ticket.png" id="day-ticket-image" alt="Day ticket image" width="150">
+                    <h3>Day Tickets</h3>
+                    <p>Entrance and ride pass</p>
+                    <p>From £100.00/Day</p>
+                    <ul>
+                        <li>Add ride tickets for £150.00/Day</li>
+                        <li>Free entrance for kids under 3 years</li>
+                        <li>Tickets for kids aged 3-7 start at £50 </li>
+                    </ul>
+                    <!--Isn't clickable due to no links-->
+                    <button class="button"> Buy Now</button>
+                </div>
+
+                <div class="ticket">
+                    <img src="Images/event-ticket.png" id="event-ticket-image" alt="Event ticket image" width="150">
+                    <h3>Events</h3>
+                    <p>Enjoy with us on special days of the year!</p>
+                    <p>From £100/Event</p>
+                    <ul>
+                        <li>Free entrance</li>
+                        <li>Access to all events</li>
+                        <li>Up to 20% off dining</li>
+                    </ul>
+                    <!--Isn't clickable due to no links-->
+                    <button class="button"> Buy Now</button>
+                </div>
+
+                <!-- More tickets and gift card section-->
+
+
+
+            </div> 
+        
+        
         </div>
-
-        <div class="ticket_container">
-            <div class="ticket">
-                <img src="Images/annual_pass.png" id="ticket_image" alt="Annual Pass image" width="150">
-                <h3>Annual Pass</h3>
-                <p>Unlimited visits during all seasons</p>
-                <p>From £450.00/Year</p>
-                <ul>
-                    <li>Free entrance</li>
-                    <li>No ride tickets for kids aged 7 & under </li>
-                    <li>20% off ride tickets and select dining</li>
-                </ul>
-            <button class="button"> Buy Now</button>
-            </div>
-
-            <div class="ticket">
-                <img src="Images/package_pass.png" id="ticket_image" alt="Package Pass image" width="150">
-                <h3>Overnight Stays</h3>
-                <p>Exclusive benefits for resort guests</p>
-                <p>From £650.00/Night</p>
-                <ul>
-                    <li>Priority access to the park and rides</li>
-                    <li>Complimentary transportation</li>
-                    <li>Includes entrance and ride pass</li>
-                    <li>15% off at select dining</li>
-                </ul>
-                <button class="button"> Buy Now</button>
-            </div>
-
-            <div class="ticket">
-                <img src="Images/day_ticket.png" id="ticket_image" alt="Day ticket image" width="150">
-                <h3>Day Tickets</h3>
-                <p>Entrance and ride pass</p>
-                <p>From £100.00/Day</p>
-                <ul>
-                    <li>Add ride tickets for £150.00/Day</li>
-                    <li>Free entrance for kids under 3 years</li>
-                    <li>Tickets for kids aged 3-7 start at £50 </li>
-                </ul>
-                <button class="button"> Buy Now</button>
-            </div>
-
-            <div class="ticket">
-                <img src="Images/event_ticket.png" id="ticket_image" alt="Event ticket image" width="150">
-                <h3>Events</h3>
-                <p>Enjoy with us on special days of the year!</p>
-                <p>From £100/Event</p>
-                <ul>
-                    <li>Free entrance</li>
-                    <li>Access to all events</li>
-                    <li>Up to 20% off dining</li>
-                </ul>
-                <button class="button"> Buy Now</button>
-            </div>
-        </div> 
-       
-      
-    </div>
-    
-<footer>
-    <ul id="footer-button-list">
-        <li><a><button class="footer-button">Contact Us</button></a></li>
-        <li><a><button class="footer-button">Copyright</button></a></li>
-        <li><a href="https://www.instagram.com/"><img src="Images/Instagram-Logo.png" class="footer-logo"
-                    alt="Instagram Logo" width="50"></a></li>
-        <li><a href="https://www.facebook.com/"><img src="Images/Facebook-Logo.png" class="footer-logo"
-                    alt="Facebook Logo" width="50"></a></li>
-        <li><a href="https://twitter.com/"><img src="Images/X-Logo.png" class="footer-logo" alt="X Logo" width="50"></a>
-        </li>
-    </ul>
-    
-</footer>
-
-</body>
-
+        <!--Footer Section-->
+        <!--Code copied from homepage -->
+        <footer>
+            <ul id="footer-button-list">
+                <!--Aren't clickable due to no links but will be clickable when link is added-->
+                <li><a class="footer-button">Contact Us</a></li>
+                <li><a class="footer-button">Copyright</a></li>
+                <li><a href="https://www.instagram.com/"><img src="Images/Instagram-Logo.png" class="footer-logo"
+                            alt="Instagram Logo" width="50"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="Images/Facebook-Logo.png" class="footer-logo"
+                            alt="Facebook Logo" width="50"></a></li>
+                <li><a href="https://twitter.com/"><img src="Images/X-Logo.png" class="footer-logo" alt="X Logo" width="50"></a>
+                </li>
+            </ul>
+        </footer>
+    </body>
 </html>
