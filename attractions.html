@@ -11,6 +11,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Our Attractions</title>
       <!--Add stylesheet when adding CSS-->
+      <link rel="stylesheet" href="/stylesheets/attractions.css">
     </head>
     
     <body>
@@ -88,91 +89,106 @@
         </section>
         
         <!-- Arcades - Coded by Joao -->
-        <section id="arcades">
-          <h2>Our Arcades</h2>
-          <div id="arcades-container">
-            <ul id="arcades-list">
-              <li>
-                <!-- ideal size:280x158 -->
-                <img width="280" src="Images/attractions/arcade-1.jpg" alt="An image of one of our arcades">
-                <p> Arcade information goes here</p>
-              </li>
-              <li>
-                <img width="280" src="Images/attractions/arcade-2.jpg" alt="An image of one of our arcades">
-                <p> Arcade information goes here</p>
-              </li>
-              <li>
-                <img width="280" src="Images/attractions/arcade-3.jpg" alt="An image of one of our arcades">
-                <p> Arcade information goes here</p>
-              </li>
-            </ul>
-          </div>
+        <div class="bg-secondary">
+          <section id="arcades" class="section-container">
+            <h2 class="section-title">Our Arcades</h2>
+            <div id="arcades-container">
+              <ul id="arcades-list">
+                <li class="card">
+                  <!-- ideal size:280x158 -->
+                  <img src="Images/attractions/arcade-1.jpg" alt="An image of one of our arcades">
+                  <p class="card-description"> Arcade information goes here</p>
+                </li>
+                <li class="card">
+                  <img src="Images/attractions/arcade-2.jpg" alt="An image of one of our arcades">
+                  <p class="card-description"> Arcade information goes here</p>
+                </li>
+                <li class="card">
+                  <img src="Images/attractions/arcade-3.jpg" alt="An image of one of our arcades">
+                  <p class="card-description"> Arcade information goes here</p>
+                </li>
+              </ul>
+            </div>
         </section>
+
+        </div>
 
         <!-- Fairground - Coded by Joao -->
-        <section id="fairground">
-          <h2>Our Fairground</h2>
-          <div id="fairground-container">
-            <aside>
-              <p>Written description of Fairground goes here</p>
-              <p>Park location goes here</p>
-            </aside>
-            <div>
-              <!-- ideal size:70X394 -->
-              <img width="700" src="Images/attractions/fairground-1.jpg" alt="An image of one of our fairgrounds">
+        <div class="bg-primary">
+          <section id="fairground" class="section-container">
+            <h2 class="section-title">Our Fairground</h2>
+            <div id="fairground-container" class="card">
+              <aside id="fairground-description">
+                <p>Written description of Fairground goes here</p>
+                <p>Park location goes here</p>
+              </aside>
+              <div id="fairground-banner">
+                <img src="Images/attractions/fairground-1.jpg" alt="An image of one of our fairgrounds">
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         <!-- Restaurants - Coded by Joao -->
-        <section id="restaurants">
-          <h2>Our Restaurants</h2>
-          <div id="restaurants-container">
-            <ul id="restaurants-list">
-              <li>
-                <!-- ideal size:260x310 -->
-                <img width="260" src="Images/attractions/restaurant-1.jpg" alt="An image of one of our restaurants">
-                <p> Restaurant information goes here</p>
-                <p>Park location goes here</p>
-              </li>
-              <li>
-                <img width="260" src="Images/attractions/restaurant-2.jpg" alt="An image of one of our restaurants">
-                <p> Restaurant information goes here</p>
-                <p>Park location goes here</p>
-              </li>
-              <li>
-                <img width="260" src="Images/attractions/restaurant-3.jpg" alt="An image of one of our restaurants">
-                <p> Restaurant information goes here</p>
-                <p>Park location goes here</p>
-              </li>
-              <li>
-                <img width="260" src="Images/attractions/restaurant-4.jpg" alt="An image of one of our restaurants">
-                <p> Restaurant information goes here</p>
-                <p>Park location goes here</p>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <div class="bg-secondary">
+          <section id="restaurants" class="section-container">
+            <h2 class="section-title">Our Restaurants</h2>
+            <div id="restaurants-container">
+              <ul id="restaurants-list">
+                <li class="card">
+                  <!-- ideal size:260x310 -->
+                  <img src="Images/attractions/restaurant-1.jpg" alt="An image of one of our restaurants">
+                  <div class="card-description">
+                    <p> Restaurant information goes here</p>
+                    <p>Park location goes here</p>
+                  </div>
+                </li>
+                <li class="card">
+                  <img src="Images/attractions/restaurant-2.jpg" alt="An image of one of our restaurants">
+                  <div class="card-description">
+                    <p> Restaurant information goes here</p>
+                    <p>Park location goes here</p>
+                  </div>
+                </li>
+                <li class="card">
+                  <img src="Images/attractions/restaurant-3.jpg" alt="An image of one of our restaurants">
+                  <div class="card-description">
+                    <p> Restaurant information goes here</p>
+                    <p>Park location goes here</p>
+                  </div>
+                </li>
+                <li class="card">
+                  <img src="Images/attractions/restaurant-4.jpg" alt="An image of one of our restaurants">
+                  <div class="card-description">
+                    <p> Restaurant information goes here</p>
+                    <p>Park location goes here</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+        </div>
 
         <!-- Upcoming Events - Coded by Joao -->
-        <section id="events">
-          <h2>Upcoming Events</h2>
-          <aside>
-            <p>Written description of upcoming events goes here</p>
-          </aside>
+        <section id="events" class="section-container">
+          <h2 class="section-title">Upcoming Events</h2>
           <div id="events-container">
+            <aside id="events-description">
+              <p>Written description of upcoming events goes here</p>
+            </aside>
             <ul id="events-list">
-              <li>
-                <img width="210" src="Images/attractions/event-2.jpg" alt="An image of one of our events">
-                <p> Event information goes here</p>
+              <li class="card">
+                <img src="Images/attractions/event-2.jpg" alt="An image of one of our events">
+                <p class="card-description"> Event information goes here</p>
               </li>
-              <li>
-                <img width="210" src="Images/attractions/event-3.jpg" alt="An image of one of our events">
-                <p> Event information goes here</p>
+              <li class="card">
+                <img src="Images/attractions/event-3.jpg" alt="An image of one of our events">
+                <p class="card-description"> Event information goes here</p>
               </li>
-              <li>
-                <img width="210" src="Images/attractions/event-1.jpg" alt="An image of one of our events">
-                <p> Event information goes here</p>
+              <li class="card">
+                <img src="Images/attractions/event-1.jpg" alt="An image of one of our events">
+                <p class="card-description"> Event information goes here</p>
               </li>
             </ul>
           </div>
