@@ -1,0 +1,220 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* font classes */
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* variables */
+:root {
+  /* break points */
+  --xl: 1280px;
+  --section-primary: hsl(0, 0%, 100%);
+  --section-secondary: coral;
+  --text-color-primary: hsl(0, 0%, 20%);
+
+}
+/* global settings */
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: var(--text-color-primary);
+}
+
+/* reset html and body styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* reset list styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* reset text */
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-primary {
+  background-color: var(--section-primary);
+  color: var(--text-color-primary)
+}
+
+.bg-secondary {
+  background-color: var(--section-secondary);
+  color: var(--section-primary);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0 0 2rem;
+  color: inherit;
+}
+
+.section-container {
+  width: 100%;
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 3rem 0;
+  color: inherit;
+}
+
+.card {
+  height: max-content;
+  background-color: var(--section-primary);
+  border-radius: 0.25rem;
+  overflow: hidden;
+          box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-0.25rem);
+          box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover img:first-of-type {
+  width: 102%;
+}
+
+.card img:first-of-type {
+  transition: all 1.2s;
+  width: 100%;
+}
+
+.card-description {
+  padding: 1rem 0.5rem;
+  color: inherit;
+  border: 1px solid #ddd;
+}
+
+#arcades-list .card, #restaurants-list .card, #events-list .card {
+  display: flex;
+  flex-direction: column;
+}
+
+#arcades-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#arcades-list .card {
+  width: 18.75rem;
+}
+
+#arcades-list .card img {
+  /* aspect-ratio: 16 / 9 */
+  height: calc(18.75rem * 9/16);
+  object-fit: cover;
+}
+
+#fairground-container {
+  display: flex;
+  height: 500px;
+}
+
+#fairground-description, #events-description {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#fairground-banner, #events-list {
+  flex: 0.75;
+}
+
+#fairground-banner img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#restaurants-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#restaurants-list .card { 
+  width: 16.25rem;
+}
+
+#restaurants-list .card:nth-child(even) {
+  margin-top: 3rem;
+}
+
+#restaurants-list .card img { 
+  height: 20.3125rem;
+  object-fit: cover;
+}
+
+#events-container {
+  display: flex;
+  padding-top: 0.5rem;
+  border-left: 0.75rem solid var(--section-secondary);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#events-list {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#events-description {
+  border-right: 1px solid #ddd;
+}
+
+#events-list .card img { 
+  height: 315px;
+  object-fit: cover;
+}
