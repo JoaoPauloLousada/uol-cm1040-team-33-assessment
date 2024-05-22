@@ -37,7 +37,7 @@
   /* break points */
   --xl: 1280px;
   --section-primary: hsl(0, 0%, 100%);
-  --section-secondary: coral;
+  --section-secondary: rgb(255, 128, 82);
   --text-color-primary: hsl(0, 0%, 20%);
 
 }
@@ -95,7 +95,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 2rem 1rem;
     background-color: var(--section-primary);
     position: -webkit-sticky;
     position: sticky;
@@ -123,8 +123,8 @@ nav {
 /* Nav Bar Buttons */
 .nav-button {
     padding: 0.25rem;
-    border-left: 2px solid var(--section-secondary);
-    border-right: 2px solid var(--section-secondary);
+    /* border-left: 2px solid var(--section-secondary);
+    border-right: 2px solid var(--section-secondary); */
 }
 /* Nav Bar Buttons when normal and hovered */
 .nav-button:link {
@@ -137,6 +137,8 @@ nav {
 
 
 /*---------------------Advertisement Section---------------------*/
+
+/*---------------------Advertisement Image---------------------*/
 
 /* Main Ad Image container holding everything */
 #home-ad-image-main-container {
@@ -185,4 +187,36 @@ nav {
     font-size: calc(2vw + 2vh);
     color: var(--section-primary);
     background-color: var(--text-color-primary);
+}
+
+/*---------------------Advertisement Buttons---------------------*/
+
+/* Ad Buttons Container */
+#home-ad-button-list {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 6vw;
+    margin: 0.5rem 0;
+}
+
+/* Ad Buttons */
+.home-ad-buttons a {
+    display: flex;
+    color: var(--section-primary);
+    background-color: var(--section-secondary);
+    padding: 1.7rem 6vw;
+    font-size: 1.3rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+}
+
+/* Ad Buttons on Hover */
+.home-ad-buttons a:hover {
+    background-color: rgb(227, 100, 54);
+    transform: translateY(-0.1rem);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
 }
