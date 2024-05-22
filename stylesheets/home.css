@@ -100,6 +100,7 @@ nav {
     position: sticky;
     align-self: flex-start;
     top: 0;
+    z-index: 2;
 }
 
 /* Nav Bar Logo and Opening Times Section */
@@ -124,6 +125,7 @@ nav {
     border-left: 2px solid var(--section-secondary);
     border-right: 2px solid var(--section-secondary);
 }
+/* Nav Bar Buttons when normal and hovered */
 .nav-button:link {
     color: var(--text-color-primary);
     text-decoration: none;
@@ -132,11 +134,42 @@ nav {
     color: var(--section-secondary);
 }
 
+
 /*---------------------Advertisement Section---------------------*/
+#home-ad-image-main-container {
+    position: relative;
+    z-index: 1;
+    height: 70vh;
+    overflow: hidden;
+}
 #home-ad-image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#home-ad-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 30%;
+}
+#home-ad-text-container{
+    position: absolute;
+    top: 15vh;
+    left: 7vh;
+    font-weight: 600;
+    font-style: italic;
+}
+#home-ad-text-main{
+    padding: 0.25rem 0.25rem;
+    width: 37vw;
+    font-size: calc(3vw + 3vh);
+    color: var(--section-primary);
     background-color: var(--section-secondary);
-    padding: 3rem 0;
+}
+#home-ad-text-subtitle {
+    padding: 0.25rem 0.25rem;
+    width: 13vw;
+    font-size: calc(2vw + 2vh);
+    color: var(--section-primary);
+    background-color: var(--text-color-primary);
 }
