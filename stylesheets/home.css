@@ -114,7 +114,7 @@ nav {
     text-transform: uppercase;
 }
 #opening-times {
-  font-size: clamp(0.8rem, 2.3vw, 1rem);
+  font-size: clamp(0.8rem, 1vw, 1rem);
 }
 
 /* Nav Bar Button Container */
@@ -130,7 +130,7 @@ nav {
 /* Nav Bar Buttons */
 .nav-button {
     padding: 0.25rem;
-    font-size: clamp(0.8rem, 2.3vw, 1rem);
+    font-size: clamp(0.8rem, 1vw, 1rem);
 }
 /* Nav Bar Buttons when normal and hovered */
 .nav-button:link {
@@ -217,7 +217,7 @@ nav {
     background-color: var(--section-secondary);
     height: 10vh;
     width: 17vw;
-    font-size: clamp(0.8rem, 2vw, 1.3rem);
+    font-size: clamp(0.8rem, 1.3vw, 1.3rem);
     border-radius: 0.25rem;
     text-decoration: none;
     font-weight: 300;
@@ -268,7 +268,7 @@ header {
 
 /* All About Us Text (No title) */
 #about-us-desc, #about-us-where, #about-us-location {
-  font-size: clamp(0.8rem, 2.3vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
 }
 #about-us-where {
   color: var(--section-secondary);
@@ -333,7 +333,7 @@ header {
   background-color: var(--section-secondary);
   height: 10vh;
   width: 17vw;
-  font-size: clamp(0.8rem, 2vw, 1.3rem);
+  font-size: clamp(0.8rem, 1.3vw, 1.3rem);
   border-radius: 0.25rem;
   text-decoration: none;
   font-weight: 300;
