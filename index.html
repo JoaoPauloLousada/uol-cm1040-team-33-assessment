@@ -11,13 +11,16 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <meta name='robots' content='noindex, nofollow'>
         <!--Add stylesheet when adding CSS-->
+        <link rel="stylesheet" href="/stylesheets/home.css">
     </head>
     <body>
         <!--Homepage coded by Aydin Gursoy-->
         <!--Navigation Bar-->
         <nav>
-            <img src="Images/Logo.png" id="logo" alt="Pixel Park Logo" width="200">
-            <p id="opening-times">Opening Times Today: 9am - 10pm</p>
+            <div id="nav-logo-and-times">
+                <a href="index.html"><img src="Images/Logo.png" id="logo" alt="Pixel Park Logo" width="200"></a>
+                <p id="opening-times">Opening Times Today: 9am - 10pm</p>
+            </div>
             <ul id="nav-buttons-list">
                 <li><a href="index.html" class="nav-button">Home</a></li>
                 <li><a href="attractions.html" class="nav-button">Attractions</a></li>
@@ -26,7 +29,15 @@
             </ul>
         </nav>
         <!--Advertisement Section with Advertisement Buttons-->
-        <img src="Images/Advertisement.png" id="home-ad-image" alt="Advertisement Image" width="900">
+        <div id="home-ad-image-main-container">
+            <div id="home-ad-image-container">
+                <img src="Images/Advertisement.jpg" alt="Advertisement Image">
+            </div>
+            <div id="home-ad-text-container">
+                <div id="home-ad-text-main">Are you ready to level up your fun?</div>
+                <div id="home-ad-text-subtitle">Visit Now</div>
+            </div>
+        </div>
         <div id="home-ad-button-container">
             <ul id="home-ad-button-list">
                 <li><a href="tickets_page.html" class="home-ad-buttons">Day Tickets</a></li>
