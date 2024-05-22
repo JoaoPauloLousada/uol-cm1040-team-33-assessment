@@ -96,7 +96,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     background-color: var(--section-primary);
     position: -webkit-sticky;
     position: sticky;
