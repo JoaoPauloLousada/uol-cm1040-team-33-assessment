@@ -44,7 +44,7 @@
 /* global settings */
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--text-color-primary);
 }
 
@@ -94,7 +94,12 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin: 1rem 1rem 1rem 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: var(--section-primary);
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
 }
 
 /* Nav Bar Logo and Opening Times Section */
@@ -102,14 +107,15 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 5rem;
+    gap: 3vw;
 }
 
 /* Nav Bar Button Container */
 #nav-buttons-list {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 2vw;
+    margin-left: 2vw;
 }
 
 /* Nav Bar Buttons */
@@ -124,4 +130,13 @@ nav {
 }
 .nav-button:hover {
     color: var(--section-secondary);
+}
+
+/*---------------------Advertisement Section---------------------*/
+#home-ad-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--section-secondary);
+    padding: 3rem 0;
 }
