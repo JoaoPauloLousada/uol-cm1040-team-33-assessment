@@ -95,6 +95,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     padding: 2rem 1rem;
     background-color: var(--section-primary);
     position: -webkit-sticky;
@@ -110,6 +111,8 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 3vw;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /* Nav Bar Button Container */
@@ -118,6 +121,8 @@ nav {
     flex-direction: row;
     gap: 2vw;
     margin-left: 2vw;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /* Nav Bar Buttons */
@@ -204,12 +209,18 @@ nav {
 /* Ad Buttons */
 .home-ad-buttons a {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     color: var(--section-primary);
     background-color: var(--section-secondary);
-    padding: 1.7rem 6vw;
-    font-size: 1.3rem;
+    height: 10vh;
+    width: 17vw;
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
     border-radius: 0.25rem;
     text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /* Ad Buttons on Hover */
