@@ -37,7 +37,7 @@
   /* break points */
   --xl: 1280px;
   --section-primary: hsl(0, 0%, 100%);
-  --section-secondary: coral;
+  --section-secondary: rgb(255, 128, 82);
   --text-color-primary: hsl(0, 0%, 20%);
 
 }
@@ -89,12 +89,14 @@ p, h1, h2, h3, h4, h5, h6 {
 /*---------------------Home Page Styling---------------------*/
 
 /*---------------------Nav Bar---------------------*/
+
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+    padding: 2rem 1rem;
     background-color: var(--section-primary);
     position: -webkit-sticky;
     position: sticky;
@@ -109,6 +111,8 @@ nav {
     flex-direction: row;
     align-items: center;
     gap: 3vw;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /* Nav Bar Button Container */
@@ -117,13 +121,15 @@ nav {
     flex-direction: row;
     gap: 2vw;
     margin-left: 2vw;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 /* Nav Bar Buttons */
 .nav-button {
     padding: 0.25rem;
-    border-left: 2px solid var(--section-secondary);
-    border-right: 2px solid var(--section-secondary);
+    /* border-left: 2px solid var(--section-secondary);
+    border-right: 2px solid var(--section-secondary); */
 }
 /* Nav Bar Buttons when normal and hovered */
 .nav-button:link {
@@ -136,22 +142,32 @@ nav {
 
 
 /*---------------------Advertisement Section---------------------*/
+
+/*---------------------Advertisement Image---------------------*/
+
+/* Main Ad Image container holding everything */
 #home-ad-image-main-container {
     position: relative;
     z-index: 1;
     height: 70vh;
     overflow: hidden;
 }
+
+/* Container holding ad image (here to use absolute and relative for text) */
 #home-ad-image-container {
     width: 100%;
     height: 100%;
 }
+
+/* Image */
 #home-ad-image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 0% 30%;
 }
+
+/* Container for Ad Image Text */
 #home-ad-text-container{
     position: absolute;
     top: 15vh;
@@ -159,6 +175,8 @@ nav {
     font-weight: 600;
     font-style: italic;
 }
+
+/* Ad Image Main Text */
 #home-ad-text-main{
     padding: 0.25rem 0.25rem;
     width: 37vw;
@@ -166,10 +184,50 @@ nav {
     color: var(--section-primary);
     background-color: var(--section-secondary);
 }
+
+/* Ad Image Subtitle Text */
 #home-ad-text-subtitle {
     padding: 0.25rem 0.25rem;
     width: 13vw;
     font-size: calc(2vw + 2vh);
     color: var(--section-primary);
     background-color: var(--text-color-primary);
+}
+
+/*---------------------Advertisement Buttons---------------------*/
+
+/* Ad Buttons Container */
+#home-ad-button-list {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    gap: 6vw;
+    margin: 0.5rem 0;
+}
+
+/* Ad Buttons */
+.home-ad-buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--section-primary);
+    background-color: var(--section-secondary);
+    height: 10vh;
+    width: 17vw;
+    font-size: clamp(0.8rem, 2vw, 1.3rem);
+    border-radius: 0.25rem;
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* Ad Buttons on Hover */
+.home-ad-buttons a:hover {
+    background-color: rgb(227, 100, 54);
+    transform: translateY(-0.1rem);
+    box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
 }
