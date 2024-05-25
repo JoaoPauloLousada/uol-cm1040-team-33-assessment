@@ -11,6 +11,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Our Attractions</title>
       <!--Add stylesheet when adding CSS-->
+      <link rel="stylesheet" href="/stylesheets/main.css">
       <link rel="stylesheet" href="/stylesheets/attractions.css">
     </head>
     
@@ -19,14 +20,16 @@
         <!--Code copied from homepage -->
         <!--Navigation Bar-->
         <nav>
-            <img src="Images/Logo.png" id="logo" alt="Pixel Park Logo" width="200">
+          <div id="nav-logo-and-times">
+            <a href="index.html"><img src="Images/Logo.png" id="logo" alt="Pixel Park Logo" width="200"></a>
             <p id="opening-times">Opening Times Today: 9am - 10pm</p>
-            <ul id="nav-buttons-list">
-                <li><a href="index.html" class="nav-button">Home</a></li>
-                <li><a href="attractions.html" class="nav-button">Attractions</a></li>
-                <li><a href="#" class="nav-button">About & Contact</a></li>
-                <li><a href="tickets_page.html" class="nav-button">Buy Now</a></li>
-            </ul>
+          </div>
+          <ul id="nav-buttons-list">
+            <li><a href="index.html" class="nav-button">Home</a></li>
+            <li><a href="attractions.html" class="nav-button">Attractions</a></li>
+            <li><a href="#" class="nav-button">About & Contact</a></li>
+            <li><a href="tickets_page.html" class="nav-button">Buy Now</a></li>
+          </ul>
         </nav>
         <h1>Our Attractions</h1>
       </header> 
@@ -195,15 +198,22 @@
         </section>
       </main>
 
-      <!--Footer Section-->
-      <footer>
-        <ul id="footer-button-list">
+    <!--Footer Section-->
+    <footer>
+      <ul id="footer-button-list">
+        <div id="footer-buttons-container">
           <li><a href="#" class="footer-button">Contact Us</a></li>
           <li><a href="#" class="footer-button">Copyright</a></li>
-          <li><a href="https://www.instagram.com/"><img src="Images/Instagram-Logo.png" class="footer-logo" alt="Instagram Logo" width="50"></a></li>
-          <li><a href="https://www.facebook.com/"><img src="Images/Facebook-Logo.png" class="footer-logo" alt="Facebook Logo" width="50"></a></li>
-          <li><a href="https://twitter.com/"><img src="Images/X-Logo.png" class="footer-logo" alt="X Logo" width="50"></a></li>
-        </ul>
-      </footer>
+        </div>
+        <div id="footer-logos-container">
+          <li><a href="https://www.instagram.com/"><img src="Images/Instagram-Logo.png" class="footer-logo"
+                alt="Instagram Logo" width="50"></a></li>
+          <li><a href="https://www.facebook.com/"><img src="Images/Facebook-Logo.png" class="footer-logo"
+                alt="Facebook Logo" width="50"></a></li>
+          <li><a href="https://twitter.com/"><img src="Images/X-Logo.png" class="footer-logo" alt="X Logo" width="50"></a>
+          </li>
+        </div>
+      </ul>
+    </footer>
     </body>
 </html>
