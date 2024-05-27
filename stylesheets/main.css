@@ -1,0 +1,178 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* font classes */
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* variables */
+:root {
+  /* break points */
+  --xl: 1280px;
+  --section-primary: hsl(0, 0%, 100%);
+  --section-secondary: rgb(255, 128, 82);
+  --text-color-primary: hsl(0, 0%, 20%);
+
+}
+/* global settings */
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: var(--text-color-primary);
+}
+
+/* reset html and body styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* reset list styles */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* reset text */
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-primary {
+  background-color: var(--section-primary);
+  color: var(--text-color-primary)
+}
+
+.bg-secondary {
+  background-color: var(--section-secondary);
+  color: var(--section-primary);
+}
+
+/*---------------------Nav Bar---------------------*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: var(--section-primary);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+
+/* Nav Bar Logo and Opening Times Section */
+#nav-logo-and-times {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+#opening-times {
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+/* Nav Bar Button Container */
+#nav-buttons-list {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    margin-left: 2vw;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+/* Nav Bar Buttons */
+.nav-button {
+    padding: 0.25rem;
+    font-size: clamp(0.8rem, 1vw, 1rem);
+}
+/* Nav Bar Buttons when normal and hovered */
+.nav-button:link {
+    color: var(--text-color-primary);
+    text-decoration: none;
+}
+.nav-button:hover {
+    color: var(--section-secondary);
+}
+
+/*---------------------Footer Section---------------------*/
+
+/* Footer Main Container */
+#footer-button-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Buttons and Logos Containers */
+#footer-buttons-container, #footer-logos-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 3vw;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* Footer Button */
+.footer-button {
+  padding: 0.25rem;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+/* Footer Buttons when normal and hovered */
+.footer-button:link {
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+.footer-button:hover {
+  color: var(--section-secondary);
+}
