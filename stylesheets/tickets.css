@@ -1,0 +1,127 @@
+
+/* global settings */
+* {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--text-color-primary);
+}
+
+/*---------------------Ticket Page Styling---------------------*/
+
+/* "Buy tickets, passes and packages section with 'Buy now' buttons" section  - Coded by Surbhi Jain */
+
+/* main ticket-page-body container holding everything */
+/* Ticket-page-title */
+.ticket-page-body .ticket-page-title {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--section-secondary);
+    padding: 5vh;
+}
+
+.ticket-page-title h1 {
+    font-size: 3em;
+    color: var(--section-primary);
+}
+
+/* Ticket-container holding four ticket types */
+.ticket-container{
+    display: flex;
+    flex-direction:row;
+    flex:1;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: var(--xl);
+    margin: 0 auto;
+    padding: 3em 0;
+    color: inherit;
+}
+
+/* Ticket-type container holding each ticket */
+.ticket{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    flex: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    padding: 40px;
+    background-color: var(--section-primary);
+    color: var(--text-color-primary);
+    border-radius: 10px;
+    border: 0.5px solid var(--section-secondary);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Ticket-type title, description and price */
+.ticket-type-title{
+    white-space: nowrap;
+    font-size: 25px;
+    text-align: center;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.ticket-type-description{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5em;
+    justify-content: space-evenly;
+}
+
+.ticket-type-price{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+    justify-content: space-evenly;
+    
+}
+
+/* Image above ticket-types */
+.ticket img {
+    font-style: italic;
+    max-width: 100%;
+    height: auto;
+    justify-content: flex-start;
+    object-fit: cover;
+}
+
+/* Bullet list for tickets below ticket-price */
+.bullet-list{
+    display: flex;
+    flex-direction: column;
+    list-style-type: square;
+    margin-left: 1.5em;
+    justify-content: space-evenly;
+}
+
+/* Buy Now Buttons */
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--section-primary);
+    background-color: var(--section-secondary);
+    height: 5vh;
+    width: 8vw;
+    font-size: 0.85em;
+    border-radius: 0.25rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin:40px;
+    text-decoration: none;
+}
+
+/* Buy Now Buttons on Hover */
+.button:hover{
+    background-color:rgb(227, 100, 54);
+    transform: translateY(-0.1rem);
+}
+
+

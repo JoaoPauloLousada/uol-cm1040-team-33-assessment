@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <!--Add stylesheet when adding CSS-->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/tickets.css">
   </head>
 
     <body>
@@ -26,7 +28,7 @@
             </ul>
         </nav>
 
-    <!-- Buy tickets, passes and packages section with 'Buy now' buttons -->
+    <!-- Buy tickets, passes and packages section with 'Buy now' buttons --- Coded by Surbhi Jain-->
     <div class="ticket-page-body">
       <div class="ticket-page-title">
         <h1>Buy tickets, packages and annual pass</h1>
@@ -35,11 +37,11 @@
       <!--Annual Passes-->
       <div class="ticket-container">
         <div class="ticket">
-          <img src="Images/annual-pass.png" id="annual-pass-image" alt="Annual Pass image" width="150">
-          <h3>Annual Pass</h3>
-          <p>Unlimited visits during all seasons</p>
-          <p>From £450.00/Year</p>
-          <ul>
+          <img src="Images/annual-pass.png" id="annual-pass-image" alt="Annual Pass image" width="150" height="300">
+          <h3 class="ticket-type-title">Annual Pass</h3>
+          <p class="ticket-type-description">Unlimited visits during all seasons</p>
+          <p class="ticket-type-price">From £450.00/Year</p>
+          <ul class="bullet-list">
             <li>Free entrance</li>
             <li>No ride tickets for kids aged 7 & under</li>
             <li>20% off ride tickets and select dining</li>
@@ -49,11 +51,11 @@
 
         <!--Package Deals-->
         <div class="ticket">
-          <img src="Images/package-pass.png" id="package-pass-image" alt="Package Pass image" width="150">
-          <h3>Overnight Stays</h3>
-          <p>Exclusive benefits for resort guests</p>
-          <p>From £650.00/Night</p>
-          <ul>
+          <img src="Images/package-pass.png" id="package-pass-image" alt="Package Pass image" width="150" height="300">
+          <h3 class="ticket-type-title">Overnight Stays</h3>
+          <p class="ticket-type-description">Exclusive benefits for resort guests</p>
+          <p class="ticket-type-price">From £650.00/Night</p>
+          <ul class="bullet-list">
             <li>Priority access to the park and rides</li>
             <li>Complimentary transportation</li>
             <li>Includes entrance and ride pass</li>
@@ -64,11 +66,11 @@
 
         <!--Day Tickets-->
         <div class="ticket">
-          <img src="Images/day-ticket.png" id="day-ticket-image" alt="Day ticket image" width="150">
-          <h3>Day Tickets</h3>
-          <p>Entrance and ride pass</p>
-          <p>From £100.00/Day</p>
-          <ul>
+          <img src="Images/day-ticket.png" id="day-ticket-image" alt="Day ticket image" width="150" height="300">
+          <h3 class="ticket-type-title">Day Tickets</h3>
+          <p class="ticket-type-description">Entrance and ride pass</p>
+          <p class="ticket-type-price">From £100.00/Day</p>
+          <ul class="bullet-list">
             <li>Add ride tickets for £150.00/Day</li>
             <li>Free entrance for kids under 3 years</li>
             <li>Tickets for kids aged 3-7 start at £50</li>
@@ -82,12 +84,11 @@
             src="Images/event-ticket.png"
             id="event-ticket-image"
             alt="Event ticket image"
-            width="150"
-          >
-          <h3>Events</h3>
-          <p>Enjoy with us on special days of the year!</p>
-          <p>From £100/Event</p>
-          <ul>
+            width="150" height="300">
+          <h3 class="ticket-type-title">Events</h3>
+          <p class="ticket-type-description">Enjoy with us on special days of the year!</p>
+          <p class="ticket-type-price">From £100/Event</p>
+          <ul class="bullet-list">
             <li>Free entrance</li>
             <li>Access to all events</li>
             <li>Up to 20% off dining</li>
@@ -96,7 +97,8 @@
         </div>
       </div>
 
-      <!-- More ticket types and Gift Card section-->
+
+      <!-- More ticket types and Gift Card section--Coded by Tamir-->
       <div class="ticket-page-title">
         <h1>Other Tickets & Gift Cards</h1>
       </div>
@@ -108,7 +110,7 @@
           <h3>Groups</h3>
           <p>Come in groups of twos, threes and more!</p>
           <p>From £200/Group</p>
-          <ul>
+          <ul class="bullet-list">
             <li>Free group entrance</li>
             <li>Group's access</li>
             <li>Up to 20% off dining</li>
@@ -140,14 +142,21 @@
 
     <!--Footer Section-->
     <!--Code copied from homepage -->
-    <footer>
-      <ul id="footer-button-list">
+  <footer>
+    <ul id="footer-button-list">
+      <div id="footer-buttons-container">
         <li><a href="#" class="footer-button">Contact Us</a></li>
         <li><a href="#" class="footer-button">Copyright</a></li>
-        <li><a href="https://www.instagram.com/"><img src="Images/Instagram-Logo.png" class="footer-logo" alt="Instagram Logo" width="50"></a></li>
-        <li><a href="https://www.facebook.com/"><img src="Images/Facebook-Logo.png" class="footer-logo" alt="Facebook Logo" width="50"></a></li>
-        <li><a href="https://twitter.com/"><img src="Images/X-Logo.png" class="footer-logo" alt="X Logo" width="50"></a></li>
-      </ul>
-    </footer>
+      </div>
+      <div id="footer-logos-container">
+        <li><a href="https://www.instagram.com/"><img src="Images/Instagram-Logo.png" class="footer-logo"
+              alt="Instagram Logo" width="50"></a></li>
+        <li><a href="https://www.facebook.com/"><img src="Images/Facebook-Logo.png" class="footer-logo"
+              alt="Facebook Logo" width="50"></a></li>
+        <li><a href="https://twitter.com/"><img src="Images/X-Logo.png" class="footer-logo" alt="X Logo" width="50"></a>
+        </li>
+      </div>
+    </ul>
+  </footer>
   </body>
 </html>
