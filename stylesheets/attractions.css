@@ -1,90 +1,11 @@
-/* font imports */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-
-/* font classes */
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-black {
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-/* variables */
-:root {
-  /* break points */
-  --xl: 1280px;
-  --section-primary: hsl(0, 0%, 100%);
-  --section-secondary: coral;
-  --text-color-primary: hsl(0, 0%, 20%);
-
-}
 /* global settings */
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: var(--text-color-primary);
 }
 
-/* reset html and body styles */
-html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-}
-
-/* reset list styles */
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-}
-
-/* reset text */
-p, h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
-}
-
-.bg-primary {
-  background-color: var(--section-primary);
-  color: var(--text-color-primary)
-}
-
-.bg-secondary {
-  background-color: var(--section-secondary);
-  color: var(--section-primary);
-}
-
+/* Sections utility classes - Coded by Joao Paulo Lousada */
 .section-title {
   text-align: center;
   font-size: 1.8rem;
@@ -102,6 +23,7 @@ p, h1, h2, h3, h4, h5, h6 {
   color: inherit;
 }
 
+/* Card utility classes - Coded by Joao Paulo Lousada */
 .card {
   height: max-content;
   background-color: var(--section-primary);
@@ -135,6 +57,8 @@ p, h1, h2, h3, h4, h5, h6 {
   border: 1px solid #ddd;
 }
 
+
+/* Arcades section style - Coded by Joao Paulo Lousada */
 #arcades-list .card, #restaurants-list .card, #events-list .card {
   display: flex;
   flex-direction: column;
@@ -155,6 +79,7 @@ p, h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 
+/* Fairground section style - Coded by Joao Paulo Lousada */
 #fairground-container {
   display: flex;
   height: 500px;
@@ -178,6 +103,8 @@ p, h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 
+
+/* Restaurants section style - Coded by Joao Paulo Lousada */
 #restaurants-list {
   display: flex;
   justify-content: space-between;
@@ -196,6 +123,7 @@ p, h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
 }
 
+/* Events section style - Coded by Joao Paulo Lousada */
 #events-container {
   display: flex;
   padding-top: 0.5rem;
