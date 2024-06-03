@@ -176,3 +176,576 @@ nav {
 .footer-button:hover {
   color: var(--section-secondary);
 }
+
+/*---------------------HOME PAGE STYLING---------------------*/
+ /*Coded by Aydin Gursoy*/
+
+
+/*---------------------Advertisement Section---------------------*/
+
+/*---------------------Advertisement Image---------------------*/
+
+/* Main Ad Image container holding everything */
+#home-ad-image-main-container {
+  position: relative;
+  z-index: 4;
+  height: 70vh;
+  overflow: hidden;
+}
+
+/* Container holding ad image (here to use absolute and relative for text) */
+#home-ad-image-container {
+  width: 100%;
+  height: 100%;
+}
+
+/* Image */
+#home-ad-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 30%;
+}
+
+/* Container for Ad Image Text */
+#home-ad-text-container{
+  position: absolute;
+  top: 15vh;
+  left: 7vh;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Ad Image Main Text */
+#home-ad-text-main{
+  padding: 0.25rem 0.25rem;
+  width: 37vw;
+  font-size: calc(3vw + 3vh);
+  color: var(--section-primary);
+  background-color: var(--section-secondary);
+}
+
+/* Ad Image Subtitle Text */
+#home-ad-text-subtitle {
+  padding: 0.25rem 0.25rem;
+  width: 13vw;
+  font-size: calc(2vw + 2vh);
+  color: var(--section-primary);
+  background-color: var(--text-color-primary);
+}
+
+/*---------------------Advertisement Buttons---------------------*/
+
+/* Ad Buttons Container */
+#home-ad-button-list {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 6vw;
+  margin: 1rem 0;
+}
+
+/* Ad Buttons */
+.home-ad-buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--section-primary);
+  background-color: var(--section-secondary);
+  height: 10vh;
+  width: 17vw;
+  font-size: clamp(0.8rem, 1.3vw, 1.3rem);
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* Ad Buttons on Hover AND Newest Attraction Button */
+.home-ad-buttons a:hover, #newest-attraction-button:hover{
+  background-color: rgb(227, 100, 54);
+  transform: translateY(-0.1rem);
+  box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+}
+
+/*---------------------About Us Section---------------------*/
+
+/* About Us Main Container */
+header {
+margin: 10vh 0;
+padding: 3vh 1vw 5vh 1vw;
+border-top: 2px solid var(--section-secondary);
+border-bottom: 2px solid var(--section-secondary);
+z-index: 3;
+}
+
+/* About Us Title */
+#about-us-title {
+font-size: clamp(2rem, 3vw, 4rem);
+text-transform: uppercase;
+font-weight: 400;
+padding-bottom: 2vh;
+}
+
+/* About Us Main Text and Image Container */
+#about-us-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+z-index: 3;
+}
+
+/* About Us Text Container */
+#about-us-text-container{
+width: 40vw;
+}
+
+/* All About Us Text (No title) */
+#about-us-desc, #about-us-where, #about-us-location {
+font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+}
+#about-us-where {
+color: var(--section-secondary);
+}
+#about-us-location{
+text-transform: uppercase;
+font-weight: 300;
+}
+
+/* About Us Map Image */
+#about-us-map{
+width: 45vw;
+}
+
+/*---------------------Newest Attraction Section---------------------*/
+
+/* Newest Attraction Main Container */
+#newest-attraction-container {
+display: flex;
+flex-direction: column;
+padding-bottom: 10vh;
+}
+
+/* Title Only */
+#newest-attraction-title {
+font-size: clamp(2rem, 3vw, 4rem);
+text-transform: uppercase;
+font-weight: 400;
+padding: 2vh;
+}
+
+/* Image Container */
+#newest-attraction-img-container {
+height: 70vh;
+overflow: hidden;
+}
+
+/* Image */
+#newest-attraction-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: 0% 10%;
+}
+
+/* Button Container */
+#newest-attraction-button-container {
+display: flex;
+flex-direction: row;
+align-items: stretch;
+justify-content: center;
+margin: 1rem 0;
+}
+
+/* Button */
+#newest-attraction-button {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: var(--section-primary);
+background-color: var(--section-secondary);
+height: 10vh;
+width: 17vw;
+font-size: clamp(0.8rem, 1.3vw, 1.3rem);
+border-radius: 0.25rem;
+text-decoration: none;
+font-weight: 300;
+text-transform: uppercase;
+}
+/*Hover code for this button is in ad button section*/
+
+/*---------------------Review Section---------------------*/
+
+/* Main Container */
+#review-container {
+background-color: var(--section-secondary);
+padding: 30vh 20vw;
+}
+
+/* Quote Text */
+#review-quote {
+display: flex;
+font-size: clamp(2rem, 3vw, 4rem);
+color: var(--section-primary);
+text-align: center;
+}
+
+/* Site Text */
+#review-site {
+color: var(--section-primary);
+font-weight: 300;
+text-transform: uppercase;
+text-align: center;
+}
+
+/*---------------------ATTRACTIONS PAGE STYLING---------------------*/
+/* Coded by Elliot Lawson & Joao Paulo Lousada */
+
+/* Sections utility classes - Coded by Joao Paulo Lousada */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 0 0 2rem;
+  color: inherit;
+}
+
+.section-container {
+  width: 100%;
+  max-width: var(--xl);
+  margin: 0 auto;
+  padding: 3rem 0;
+  color: inherit;
+}
+
+/* Card utility classes - Coded by Joao Paulo Lousada */
+.card {
+  height: max-content;
+  background-color: var(--section-primary);
+  border-radius: 0.25rem;
+  overflow: hidden;
+          box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.card:hover {
+  transform: translateY(-0.25rem);
+          box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover img:first-of-type {
+  width: 102%;
+}
+
+.card img:first-of-type {
+  transition: all 1.2s;
+  width: 100%;
+}
+
+.card-description {
+  padding: 1rem 0.5rem;
+  color: inherit;
+  border: 1px solid #ddd;
+}
+
+
+/* Arcades section style - Coded by Joao Paulo Lousada */
+#arcades-list .card, #restaurants-list .card, #events-list .card {
+  display: flex;
+  flex-direction: column;
+}
+
+#arcades-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#arcades-list .card {
+  width: 18.75rem;
+}
+
+#arcades-list .card img {
+  /* aspect-ratio: 16 / 9 */
+  height: calc(18.75rem * 9/16);
+  object-fit: cover;
+}
+
+/* Fairground section style - Coded by Joao Paulo Lousada */
+#fairground-container {
+  display: flex;
+  height: 500px;
+}
+
+#fairground-description, #events-description {
+  flex: 0.25;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#fairground-banner, #events-list {
+  flex: 0.75;
+}
+
+#fairground-banner img {
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Restaurants section style - Coded by Joao Paulo Lousada */
+#restaurants-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+#restaurants-list .card { 
+  width: 16.25rem;
+}
+
+#restaurants-list .card:nth-child(even) {
+  margin-top: 3rem;
+}
+
+#restaurants-list .card img { 
+  height: 20.3125rem;
+  object-fit: cover;
+}
+
+/* Events section style - Coded by Joao Paulo Lousada */
+#events-container {
+  display: flex;
+  padding-top: 0.5rem;
+  border-left: 0.75rem solid var(--section-secondary);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+#events-list {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+#events-description {
+  border-right: 1px solid #ddd;
+}
+
+#events-list .card img { 
+  height: 315px;
+  object-fit: cover;
+}
+
+/*Rides section styles coded by Craig Elliott Lawson */
+#main-intro {
+    font-style: italic;
+    font-weight: 100;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0 0 1rem;
+}
+
+#main-attractions-list .card {
+    display: flex;
+    flex-direction: column;
+    width: 37.5rem;
+}
+
+#main-attractions-list {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 5rem;
+}
+
+
+#main-attractions-list .card img {
+  height: calc(37.5rem * 9/16);
+  object-fit: cover;
+}
+
+#secondary-attractions-list .card {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+#secondary-attractions-list {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 1rem;
+}
+
+#secondary-attractions-list .card img {
+    height: calc(24rem * 9/16);
+    object-fit: cover;
+    
+}
+
+#disclaimer {
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+}
+
+#disclaimer:hover {
+    transform: translateY(-0.15rem);
+          
+}
+
+
+/*---------------------TICKET PAGE STYLING---------------------*/
+/* "Buy tickets, passes and packages section with 'Buy now' buttons" section  - Coded by Surbhi Jain */
+
+
+/* main ticket-page-body container holding everything */
+/* Ticket-page-title */
+.ticket-page-body .ticket-page-title {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--section-secondary);
+  padding: 5vh;
+  
+}
+
+.ticket-page-title h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: var(--section-primary);
+}
+
+/* Ticket-container holding four ticket types */
+.ticket-container{
+  display: flex;
+  flex-direction:row;
+  flex:1;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  padding: 3em 2em;
+  color: inherit;
+}
+
+/* Ticket-type container holding each ticket */
+.ticket{
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  flex: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+  padding: 30px;
+  background-color: var(--section-primary);
+  color: var(--text-color-primary);
+  border-radius: 10px;
+  border: 0.5px solid var(--section-secondary);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+/* Ticket-type title, description and price */
+.ticket-type-title{
+  white-space: nowrap;
+  font-size: 1.3em;
+  text-align: center;
+  justify-content: space-evenly;
+  padding: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.ticket-type-description{
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5em;
+  justify-content: space-evenly;
+}
+
+.ticket-type-price{
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1em;
+  justify-content: space-evenly;
+}
+
+.ticket h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 25px;
+  font-size: 1.3em;
+}
+
+/* Image above ticket-types */
+.ticket img {
+  font-style: italic;
+  max-width: 100%;
+  height: auto;
+  justify-content: flex-start;
+  object-fit: cover;
+}
+
+/* Bullet list for tickets below ticket-price */
+.bullet-list{
+  display: flex;
+  flex-direction: column;
+  list-style-type: square;
+  margin-left: 1.5em;
+  justify-content: space-evenly;
+}
+
+/* Buy Now Buttons */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--section-primary);
+  background-color: var(--section-secondary);
+  height: 5vh;
+  width: 8vw;
+  font-size: 0.85em;
+  border-radius: 0.25rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin:40px;
+  text-decoration: none;
+}
+
+/* Buy Now Buttons on Hover */
+.button:hover{
+  background-color:rgb(227, 100, 54);
+  transform: translateY(-0.1rem);
+}
+
+/* How to cancel */
+#cancel-container {
+  background-color: var(--section-secondary);
+  padding: 5vh;
+}
+
+#cancel-container h1{
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2em;
+  color: var(--section-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
