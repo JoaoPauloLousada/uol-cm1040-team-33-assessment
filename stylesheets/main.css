@@ -510,6 +510,7 @@ text-align: center;
 #restaurants-list {
   display: flex;
   justify-content: space-between;
+    gap: 3rem;
 }
 
 #restaurants-list .card { 
@@ -561,7 +562,7 @@ text-align: center;
 #main-attractions-list .card {
     display: flex;
     flex-direction: column;
-    width: 37.5rem;
+    width: 20rem;
 }
 
 #main-attractions-list {
@@ -572,14 +573,14 @@ text-align: center;
 
 
 #main-attractions-list .card img {
-  height: calc(37.5rem * 9/16);
-  object-fit: cover;
+  height: calc(35rem * 9/16);
+  object-fit: fill;
 }
 
 #secondary-attractions-list .card {
     display: flex;
     flex-direction: column;
-    width: 25rem;
+    width: 20rem;
 }
 
 #secondary-attractions-list {
@@ -589,8 +590,8 @@ text-align: center;
 }
 
 #secondary-attractions-list .card img {
-    height: calc(24rem * 9/16);
-    object-fit: cover;
+    height: calc(20rem * 9/16);
+    object-fit: fill;
     
 }
 
