@@ -1,7 +1,8 @@
 /* font imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-/*---------------------Mission Vision Section---------------------*/
+/* border-top: 2px solid var(--section-secondary);
+border-bottom: 2px solid var(--section-secondary); */
 
 /* About Us Main Container */
 .mission-vision {
@@ -9,7 +10,19 @@
   grid-template-columns: 1fr 1fr; 
   padding: 2% 2% 2% 2%;
   z-index: 2;
+  /* display: flex; */
+  justify-content: space-between;
+  padding: 20px;
+  /* border-bottom: 2px solid var(--section-secondary); */
 }
+
+.values-culture {
+  border-top: 2px solid var(--section-secondary);
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  padding: 2% 2% 2% 2%;
+}
+
 
 .section {
   padding: 10px;
@@ -43,19 +56,43 @@
 }
   
   /* Button */
-  #newest-attraction-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--section-primary);
-    background-color: var(--section-secondary);
-    height: 13vh;
-    width: 20vw;
-    font-size: clamp(0.8rem, 1.3vw, 1.3rem);
-    border-radius: 0.50rem;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
+#newest-attraction-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--section-primary);
+  background-color: var(--section-secondary);
+  height: 13vh;
+  width: 20vw;
+  font-size: clamp(0.8rem, 1.3vw, 1.3rem);
+  border-radius: 0.50rem;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
 }
-  
+
+.box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  grid-template-columns: 1fr 1fr;
+}
+
+li, p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.subText {
+  color: #000;
+}
