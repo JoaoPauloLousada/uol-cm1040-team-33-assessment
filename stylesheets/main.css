@@ -453,11 +453,11 @@ text-align: center;
   text-align: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.7s, visibility 0.7s;
+  transition: opacity 0s, visibility 0s;
   padding: 1rem 0.5rem;
   color: inherit;
   border: 1px solid #ddd;
-    background-color: var(--section-primary);
+  background-color: var(--section-primary);
 }
 
 .pre-hover-text {
@@ -565,6 +565,7 @@ text-align: center;
   border-left: 0.75rem solid var(--section-secondary);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  gap: 1rem;
 }
 
 #events-list {
@@ -582,6 +583,15 @@ text-align: center;
   object-fit: cover;
 }
 
+#events-list .card-description {
+    background-color: var(--section-secondary);
+    color: var(--section-primary);
+}
+
+#events-list .pre-hover-text {
+    background-color: var(--section-secondary);
+    color: var(--section-primary);
+}
 /*Rides section styles coded by Craig Elliott Lawson */
 #main-intro {
     font-style: italic;
@@ -603,12 +613,21 @@ text-align: center;
     column-gap: 5rem;
 }
 
+#main-attractions-list .card-description {
+    height: 225px;
+}
+
+#main-attractions-list .card:hover .card-description {
+    height: max-content;
+}
+
 
 #main-attractions-list .card img {
   height: calc(35rem * 9/16);
   object-fit: fill;
 }
 
+/* Secondary Attractions Coded by Craig Elliott Lawson */
 #secondary-attractions-list .card {
     display: flex;
     flex-direction: column;
@@ -629,6 +648,11 @@ text-align: center;
 #secondary-attractions-list .card-description {
     background-color: var(--section-secondary);
     color: var(--section-primary);
+    height: 225px;
+}
+
+#secondary-attractions-list .card:hover .card-description {
+    height: max-content;
 }
 
 #secondary-attractions-list .pre-hover-text {
