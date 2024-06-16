@@ -44,7 +44,7 @@
 /* global settings */
 * {
   font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--text-color-primary);
 }
 
@@ -425,16 +425,12 @@ text-align: center;
   color: inherit;
 }
 
-/* Card utility classes - Coded by Joao Paulo Lousada */
+/* Card utility classes - Coded by Joao Paulo Lousada & Craig Elliott Lawson */
 .card {
+    position: relative;
   height: max-content;
-  background-color: var(--section-primary);
   border-radius: 0.25rem;
-  overflow: hidden;
-          box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
-     -moz-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
-  transition: transform 0.5s, box-shadow 0.5s;
+  overflow: visible;
 }
 
 .card:hover {
@@ -445,7 +441,7 @@ text-align: center;
 }
 
 .card:hover img:first-of-type {
-  width: 102%;
+  object-fit: fill;
 }
 
 .card img:first-of-type {
@@ -453,10 +449,46 @@ text-align: center;
   width: 100%;
 }
 
-.card-description {
+.card-description {  
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0s, visibility 0s;
   padding: 1rem 0.5rem;
   color: inherit;
   border: 1px solid #ddd;
+  background-color: var(--section-primary);
+}
+
+.pre-hover-text {
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
+    background-color: var(--section-primary);
+    padding: 1rem 0.5rem;
+}
+
+
+.card:hover .card-description {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s;
+    border: 1px solid #ddd;
+    box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+     -moz-box-shadow: 0px 3px 7px -2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s, box-shadow 0.5s;
+    height: max-content;
+}
+
+.card:hover .pre-hover-text {
+    visibility: hidden;
+    height: 0;
+    border: 0;
+    padding: 0;
 }
 
 
@@ -510,6 +542,7 @@ text-align: center;
 #restaurants-list {
   display: flex;
   justify-content: space-between;
+    gap: 3rem;
 }
 
 #restaurants-list .card { 
@@ -532,6 +565,7 @@ text-align: center;
   border-left: 0.75rem solid var(--section-secondary);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  gap: 1rem;
 }
 
 #events-list {
@@ -549,6 +583,15 @@ text-align: center;
   object-fit: cover;
 }
 
+#events-list .card-description {
+    background-color: var(--section-secondary);
+    color: var(--section-primary);
+}
+
+#events-list .pre-hover-text {
+    background-color: var(--section-secondary);
+    color: var(--section-primary);
+}
 /*Rides section styles coded by Craig Elliott Lawson */
 #main-intro {
     font-style: italic;
@@ -561,7 +604,7 @@ text-align: center;
 #main-attractions-list .card {
     display: flex;
     flex-direction: column;
-    width: 37.5rem;
+    width: 20rem;
 }
 
 #main-attractions-list {
@@ -570,18 +613,26 @@ text-align: center;
     column-gap: 5rem;
 }
 
-
-#main-attractions-list .card img {
-  height: calc(37.5rem * 9/16);
-  object-fit: cover;
+#main-attractions-list .card-description {
+    height: 225px;
 }
 
+#main-attractions-list .card:hover .card-description {
+    height: max-content;
+}
+
+
+#main-attractions-list .card img {
+  height: calc(35rem * 9/16);
+  object-fit: fill;
+}
+
+/* Secondary Attractions Coded by Craig Elliott Lawson */
 #secondary-attractions-list .card {
     display: flex;
     flex-direction: column;
-    width: 25rem;
+    width: 15rem;
 }
-
 #secondary-attractions-list {
     display: flex;
     justify-content: space-evenly;
@@ -589,9 +640,24 @@ text-align: center;
 }
 
 #secondary-attractions-list .card img {
-    height: calc(24rem * 9/16);
-    object-fit: cover;
+    height: calc(27rem * 9/16);
+    object-fit: fill;
     
+}
+
+#secondary-attractions-list .card-description {
+    background-color: var(--section-secondary);
+    color: var(--section-primary);
+    height: 225px;
+}
+
+#secondary-attractions-list .card:hover .card-description {
+    height: max-content;
+}
+
+#secondary-attractions-list .pre-hover-text {
+    background-color: var(--section-secondary);
+    color: var(--section-primary);
 }
 
 #disclaimer {
