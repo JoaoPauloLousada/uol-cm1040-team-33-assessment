@@ -244,6 +244,8 @@ nav {
   justify-content: center;
   gap: 6vw;
   margin: 1rem 0;
+  border-bottom: 2px solid var(--section-secondary);
+  padding-bottom: 10vh;
 }
 
 /* Ad Buttons */
@@ -276,10 +278,8 @@ nav {
 
 /* About Us Main Container */
 header {
-margin: 10vh 0;
-padding: 3vh 1vw 5vh 1vw;
-border-top: 2px solid var(--section-secondary);
-border-bottom: 2px solid var(--section-secondary);
+margin: 0 0 10vh;
+padding: 3vh 1vw 0 1vw;
 z-index: 3;
 }
 
@@ -289,6 +289,7 @@ font-size: clamp(2rem, 3vw, 4rem);
 text-transform: uppercase;
 font-weight: 400;
 padding-bottom: 2vh;
+text-decoration: none;
 }
 
 /* About Us Main Text and Image Container */
@@ -312,9 +313,13 @@ font-size: clamp(0.8rem, 1.5vw, 1.5rem);
 #about-us-where {
 color: var(--section-secondary);
 }
-#about-us-location{
+#about-us-location a{
 text-transform: uppercase;
 font-weight: 300;
+text-decoration: none;
+}
+#about-us-location a:hover {
+  color: var(--section-secondary);
 }
 
 /* About Us Map Image */
@@ -329,6 +334,8 @@ width: 45vw;
 display: flex;
 flex-direction: column;
 padding-bottom: 10vh;
+padding-top: 10vh;
+border-top: 2px solid var(--section-secondary);
 }
 
 /* Title Only */
@@ -402,6 +409,112 @@ color: var(--section-primary);
 font-weight: 300;
 text-transform: uppercase;
 text-align: center;
+}
+
+/*-----------------------ABOUT PAGE STYLING-------------------------*/
+/* Coded by Abbas Motiwala and Aydin Gursoy */
+
+.mission-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  padding: 2% 2% 2% 2%;
+  z-index: 2;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--section-secondary);
+}
+
+.mission-vision p, .mission-vision h2 {
+  color: var(--section-primary);
+}
+
+.mission-vision h2, .values-culture h2 {
+  font-size: clamp(2rem, 3vw, 4rem);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 2vh;
+  text-decoration: none;
+}
+
+.values-culture {
+  border-top: 2px solid var(--section-secondary);
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  padding: 2% 2% 2% 2%;
+}
+
+.section {
+  padding: 10px;
+}
+
+.box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  grid-template-columns: 1fr 1fr;
+}
+
+.list li, .list p, .margin-vision p, .values-culture p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.subText {
+  color: #000;
+}
+
+/* How to get here section and contact section */
+#travel-container, #contact-container {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 30px;
+}
+
+#travel-container {
+  background-color: var(--section-secondary);
+}
+
+#travel-container h2, #travel-container p, #travel-container h3 {
+  color: var(--section-primary);
+}
+
+#travel-container h2, #contact-container h2 {
+  font-size: clamp(2rem, 3vw, 4rem);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 4vh;
+  text-decoration: none;
+}
+
+#travel-container h3 {
+  font-size: clamp(1rem, 2vw, 3rem);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 2vh;
+  text-decoration: none;
+}
+
+#travel-container p {
+  padding-bottom: 2vh;
+}
+
+#contact-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#contact-container li {
+  padding-bottom: 5px;
 }
 
 /*---------------------ATTRACTIONS PAGE STYLING---------------------*/
