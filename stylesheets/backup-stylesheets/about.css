@@ -1,8 +1,6 @@
 /* font imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-
-/* About Us Main Container */
 .mission-vision {
   display: grid;
   grid-template-columns: 1fr 1fr; 
