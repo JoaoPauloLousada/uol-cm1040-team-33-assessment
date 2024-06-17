@@ -1,8 +1,6 @@
 /* font imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-/* border-top: 2px solid var(--section-secondary);
-border-bottom: 2px solid var(--section-secondary); */
 
 /* About Us Main Container */
 .mission-vision {
@@ -10,10 +8,22 @@ border-bottom: 2px solid var(--section-secondary); */
   grid-template-columns: 1fr 1fr; 
   padding: 2% 2% 2% 2%;
   z-index: 2;
-  /* display: flex; */
   justify-content: space-between;
   padding: 20px;
-  /* border-bottom: 2px solid var(--section-secondary); */
+  background-color: var(--section-secondary);
+}
+
+.mission-vision p, .mission-vision h2 {
+  color: var(--section-primary);
+}
+
+
+.mission-vision h2, .values-culture h2 {
+  font-size: clamp(2rem, 3vw, 4rem);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 2vh;
+  text-decoration: none;
 }
 
 .values-culture {
@@ -23,53 +33,8 @@ border-bottom: 2px solid var(--section-secondary); */
   padding: 2% 2% 2% 2%;
 }
 
-
 .section {
   padding: 10px;
-}
- 
-  /* Titles */
-  h2, #about-us-title {
-    font-size: clamp(2rem, 3vw, 4rem);
-    text-transform: uppercase;
-    font-weight: 400;
-    padding-bottom: 2vh;
-    font-weight: bold
-  }
-
-/* Ad Buttons on Hover AND Newest Attraction Button */
-.home-ad-buttons a:hover, #newest-attraction-button:hover{
-    background-color: rgb(227, 100, 54);
-    transform: translateY(-0.1rem);
-    box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
-    -webkit-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
-}
-
-  /* Button Container */
-#newest-attraction-button-container {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    justify-content: center;
-    margin: 1rem 0;
-}
-  
-  /* Button */
-#newest-attraction-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--section-primary);
-  background-color: var(--section-secondary);
-  height: 13vh;
-  width: 20vw;
-  font-size: clamp(0.8rem, 1.3vw, 1.3rem);
-  border-radius: 0.50rem;
-  text-decoration: none;
-  font-weight: 500;
-  text-transform: uppercase;
 }
 
 .box {
