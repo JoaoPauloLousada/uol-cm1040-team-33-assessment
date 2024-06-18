@@ -205,6 +205,7 @@ nav {
   height: 100%;
   object-fit: cover;
   object-position: 0% 30%;
+  animation: 1.5s fadeInUp2;
 }
 
 /* Container for Ad Image Text */
@@ -223,6 +224,7 @@ nav {
   font-size: calc(3vw + 3vh);
   color: var(--section-primary);
   background-color: var(--section-secondary);
+  animation: 1.5s fadeInUp2;
 }
 
 /* Ad Image Subtitle Text */
@@ -232,6 +234,29 @@ nav {
   font-size: calc(2vw + 2vh);
   color: var(--section-primary);
   background-color: var(--text-color-primary);
+  animation: 1.5s fadeInUp
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp2 {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 /*---------------------Advertisement Buttons---------------------*/
@@ -352,12 +377,12 @@ height: 70vh;
 overflow: hidden;
 }
 
-/* Image */
-#newest-attraction-img {
+/* Video */
+#newest-attraction-img-container video {
 width: 100%;
 height: 100%;
 object-fit: cover;
-object-position: 0% 10%;
+object-position: 0% 30%;
 }
 
 /* Button Container */
