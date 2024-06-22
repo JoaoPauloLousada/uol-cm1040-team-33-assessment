@@ -571,6 +571,7 @@ text-align: center;
   overflow: visible;
 }
 
+/*sets the shadow of the cards when the mouse hovers over them*/
 .card:hover {
   transform: translateY(-0.25rem);
           box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
@@ -587,6 +588,7 @@ text-align: center;
   width: 100%;
 }
 
+/*sets the initial card-description text of the cards to be hidden*/
 .card-description {  
   text-align: center;
   opacity: 0;
@@ -598,6 +600,7 @@ text-align: center;
   background-color: var(--section-primary);
 }
 
+/*style of the text shown when the mouse isn't hovering over the cards*/
 .pre-hover-text {
     text-align: center;
     border: 1px solid #ddd;
@@ -609,7 +612,7 @@ text-align: center;
     padding: 1rem 0.5rem;
 }
 
-
+/*makes card-description text appear when mouse hovers over card*/
 .card:hover .card-description {
     opacity: 1;
     visibility: visible;
@@ -622,6 +625,7 @@ text-align: center;
     height: max-content;
 }
 
+/*hides the pre-hover-text when mouse is hovering over card*/
 .card:hover .pre-hover-text {
     visibility: hidden;
     height: 0;
@@ -730,7 +734,9 @@ text-align: center;
     background-color: var(--section-secondary);
     color: var(--section-primary);
 }
-/*Rides section styles coded by Craig Elliott Lawson */
+
+
+/*main-attractions styles coded by Craig Elliott Lawson */
 #main-intro {
     font-style: italic;
     font-weight: 100;
@@ -765,12 +771,13 @@ text-align: center;
   object-fit: fill;
 }
 
-/* Secondary Attractions Coded by Craig Elliott Lawson */
+/*secondary-attractions Coded by Craig Elliott Lawson*/
 #secondary-attractions-list .card {
     display: flex;
     flex-direction: column;
     width: 15rem;
 }
+
 #secondary-attractions-list {
     display: flex;
     justify-content: space-evenly;
@@ -780,7 +787,6 @@ text-align: center;
 #secondary-attractions-list .card img {
     height: calc(27rem * 9/16);
     object-fit: fill;
-    
 }
 
 #secondary-attractions-list .card-description {
@@ -805,8 +811,7 @@ text-align: center;
 }
 
 #disclaimer:hover {
-    transform: translateY(-0.15rem);
-          
+    transform: translateY(-0.15rem);     
 }
 
 
