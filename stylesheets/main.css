@@ -205,7 +205,6 @@ nav {
   height: 100%;
   object-fit: cover;
   object-position: 0% 30%;
-  animation: 1.5s fadeInUp2;
 }
 
 /* Container for Ad Image Text */
@@ -224,7 +223,6 @@ nav {
   font-size: calc(3vw + 3vh);
   color: var(--section-primary);
   background-color: var(--section-secondary);
-  animation: 1.5s fadeInUp2;
 }
 
 /* Ad Image Subtitle Text */
@@ -234,29 +232,6 @@ nav {
   font-size: calc(2vw + 2vh);
   color: var(--section-primary);
   background-color: var(--text-color-primary);
-  animation: 1.5s fadeInUp
-}
-
-@keyframes fadeInUp {
-  0% {
-    transform: translateY(30%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInUp2 {
-  0% {
-    transform: translateY(5%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
 }
 
 /*---------------------Advertisement Buttons---------------------*/
@@ -269,8 +244,6 @@ nav {
   justify-content: center;
   gap: 6vw;
   margin: 1rem 0;
-  border-bottom: 2px solid var(--section-secondary);
-  padding-bottom: 10vh;
 }
 
 /* Ad Buttons */
@@ -303,8 +276,10 @@ nav {
 
 /* About Us Main Container */
 header {
-margin: 0 0 10vh;
-padding: 3vh 1vw 0 1vw;
+margin: 10vh 0;
+padding: 3vh 1vw 5vh 1vw;
+border-top: 2px solid var(--section-secondary);
+border-bottom: 2px solid var(--section-secondary);
 z-index: 3;
 }
 
@@ -314,7 +289,6 @@ font-size: clamp(2rem, 3vw, 4rem);
 text-transform: uppercase;
 font-weight: 400;
 padding-bottom: 2vh;
-text-decoration: none;
 }
 
 /* About Us Main Text and Image Container */
@@ -338,13 +312,9 @@ font-size: clamp(0.8rem, 1.5vw, 1.5rem);
 #about-us-where {
 color: var(--section-secondary);
 }
-#about-us-location a{
+#about-us-location{
 text-transform: uppercase;
 font-weight: 300;
-text-decoration: none;
-}
-#about-us-location a:hover {
-  color: var(--section-secondary);
 }
 
 /* About Us Map Image */
@@ -359,8 +329,6 @@ width: 45vw;
 display: flex;
 flex-direction: column;
 padding-bottom: 10vh;
-padding-top: 10vh;
-border-top: 2px solid var(--section-secondary);
 }
 
 /* Title Only */
@@ -377,12 +345,12 @@ height: 70vh;
 overflow: hidden;
 }
 
-/* Video */
-#newest-attraction-img-container video {
+/* Image */
+#newest-attraction-img {
 width: 100%;
 height: 100%;
 object-fit: cover;
-object-position: 0% 30%;
+object-position: 0% 10%;
 }
 
 /* Button Container */
@@ -436,114 +404,22 @@ text-transform: uppercase;
 text-align: center;
 }
 
-/*-----------------------ABOUT PAGE STYLING-------------------------*/
-/* Coded by Abbas Motiwala and Aydin Gursoy */
-
-.mission-vision {
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  padding: 2% 2% 2% 2%;
-  z-index: 2;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: var(--section-secondary);
+/*---------------------Game Section---------------------*/
+/*Coded by Craig Elliott Lawson*/
+#game-container {
+    background-color: var(--section-primary);
+    text-align: center; 
+    
 }
 
-.mission-vision p, .mission-vision h2 {
-  color: var(--section-primary);
-}
-
-.mission-vision h2, .values-culture h2 {
-  font-size: clamp(2rem, 3vw, 4rem);
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-bottom: 2vh;
-  text-decoration: none;
-}
-
-.values-culture {
-  border-top: 2px solid var(--section-secondary);
-  display: grid;
-  grid-template-columns: 1fr 1fr; 
-  padding: 2% 2% 2% 2%;
-}
-
-.section {
-  padding: 10px;
-}
-
-.box {
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  flex: 1;
-  margin: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  grid-template-columns: 1fr 1fr;
-}
-
-.list li, .list p, .margin-vision p, .values-culture p {
-  margin-bottom: 15px;
-  color: #555;
-}
-
-.list {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-.subText {
-  color: #000;
-}
-
-/* How to get here section and contact section */
-#travel-container, #contact-container {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
-  padding: 30px;
-}
-
-#travel-container {
-  background-color: var(--section-secondary);
-}
-
-#travel-container h2, #travel-container p, #travel-container h3 {
-  color: var(--section-primary);
-}
-
-#travel-container h2, #contact-container h2 {
-  font-size: clamp(2rem, 3vw, 4rem);
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-bottom: 4vh;
-  text-decoration: none;
-}
-
-#travel-container h3 {
-  font-size: clamp(1rem, 2vw, 3rem);
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-bottom: 2vh;
-  text-decoration: none;
-}
-
-#travel-container p {
-  padding-bottom: 2vh;
-}
-
-#contact-container ul {
-  list-style-type: disc;
-  padding-left: 20px;
-}
-
-#contact-container li {
-  padding-bottom: 5px;
+.game-list {
+    padding: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /*---------------------ATTRACTIONS PAGE STYLING---------------------*/
-/* Coded by Craig Elliott Lawson & Joao Paulo Lousada */
+/* Coded by Elliot Lawson & Joao Paulo Lousada */
 
 /* Sections utility classes - Coded by Joao Paulo Lousada */
 .section-title {
@@ -571,7 +447,6 @@ text-align: center;
   overflow: visible;
 }
 
-/*sets the shadow of the cards when the mouse hovers over them*/
 .card:hover {
   transform: translateY(-0.25rem);
           box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
@@ -588,7 +463,6 @@ text-align: center;
   width: 100%;
 }
 
-/*sets the initial card-description text of the cards to be hidden*/
 .card-description {  
   text-align: center;
   opacity: 0;
@@ -600,7 +474,6 @@ text-align: center;
   background-color: var(--section-primary);
 }
 
-/*style of the text shown when the mouse isn't hovering over the cards*/
 .pre-hover-text {
     text-align: center;
     border: 1px solid #ddd;
@@ -612,7 +485,7 @@ text-align: center;
     padding: 1rem 0.5rem;
 }
 
-/*makes card-description text appear when mouse hovers over card*/
+
 .card:hover .card-description {
     opacity: 1;
     visibility: visible;
@@ -625,7 +498,6 @@ text-align: center;
     height: max-content;
 }
 
-/*hides the pre-hover-text when mouse is hovering over card*/
 .card:hover .pre-hover-text {
     visibility: hidden;
     height: 0;
@@ -734,9 +606,7 @@ text-align: center;
     background-color: var(--section-secondary);
     color: var(--section-primary);
 }
-
-
-/*main-attractions styles coded by Craig Elliott Lawson */
+/*Rides section styles coded by Craig Elliott Lawson */
 #main-intro {
     font-style: italic;
     font-weight: 100;
@@ -771,13 +641,12 @@ text-align: center;
   object-fit: fill;
 }
 
-/*secondary-attractions Coded by Craig Elliott Lawson*/
+/* Secondary Attractions Coded by Craig Elliott Lawson */
 #secondary-attractions-list .card {
     display: flex;
     flex-direction: column;
     width: 15rem;
 }
-
 #secondary-attractions-list {
     display: flex;
     justify-content: space-evenly;
@@ -787,6 +656,7 @@ text-align: center;
 #secondary-attractions-list .card img {
     height: calc(27rem * 9/16);
     object-fit: fill;
+    
 }
 
 #secondary-attractions-list .card-description {
@@ -811,7 +681,8 @@ text-align: center;
 }
 
 #disclaimer:hover {
-    transform: translateY(-0.15rem);     
+    transform: translateY(-0.15rem);
+          
 }
 
 
