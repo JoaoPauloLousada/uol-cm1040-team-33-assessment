@@ -205,6 +205,7 @@ nav {
   height: 100%;
   object-fit: cover;
   object-position: 0% 30%;
+  animation: 1.5s fadeInUp2;
 }
 
 /* Container for Ad Image Text */
@@ -223,6 +224,7 @@ nav {
   font-size: calc(3vw + 3vh);
   color: var(--section-primary);
   background-color: var(--section-secondary);
+  animation: 1.5s fadeInUp2;
 }
 
 /* Ad Image Subtitle Text */
@@ -232,6 +234,29 @@ nav {
   font-size: calc(2vw + 2vh);
   color: var(--section-primary);
   background-color: var(--text-color-primary);
+  animation: 1.5s fadeInUp
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp2 {
+  0% {
+    transform: translateY(5%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 /*---------------------Advertisement Buttons---------------------*/
@@ -278,114 +303,142 @@ nav {
 
 /* About Us Main Container */
 header {
-  margin: 0 0 10vh;
-  padding: 3vh 1vw 0 1vw;
-  z-index: 3;
-  }
-  
-  /* About Us Title */
-  #about-us-title {
-  font-size: clamp(2rem, 3vw, 4rem);
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-bottom: 2vh;
-  text-decoration: none;
-  }
-  
-  /* About Us Main Text and Image Container */
-  #about-us-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  z-index: 3;
-  }
-  
-  /* About Us Text Container */
-  #about-us-text-container{
-  width: 40vw;
-  }
-  
-  /* All About Us Text (No title) */
-  #about-us-desc, #about-us-where, #about-us-location {
-  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
-  }
-  #about-us-where {
+margin: 0 0 10vh;
+padding: 3vh 1vw 0 1vw;
+z-index: 3;
+animation: 1.5s fadeInUp2;
+}
+
+/* About Us Title */
+#about-us-title {
+font-size: clamp(2rem, 3vw, 4rem);
+text-transform: uppercase;
+font-weight: 400;
+padding-bottom: 2vh;
+text-decoration: none;
+}
+
+/* About Us Main Text and Image Container */
+#about-us-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+z-index: 3;
+}
+
+/* About Us Text Container */
+#about-us-text-container{
+width: 40vw;
+}
+
+/* All About Us Text (No title) */
+#about-us-desc, #about-us-where, #about-us-location {
+font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+}
+#about-us-where {
+color: var(--section-secondary);
+}
+#about-us-location a{
+text-transform: uppercase;
+font-weight: 300;
+text-decoration: none;
+}
+#about-us-location a:hover {
   color: var(--section-secondary);
-  }
-  #about-us-location a{
-  text-transform: uppercase;
-  font-weight: 300;
-  text-decoration: none;
-  }
-  #about-us-location a:hover {
-    color: var(--section-secondary);
-  }
-  
-  /* About Us Map Image */
-  #about-us-map{
-  width: 45vw;
-  }
+}
+
+/* About Us Map Image */
+#about-us-map{
+width: 45vw;
+}
 
 /*---------------------Newest Attraction Section---------------------*/
 
 /* Newest Attraction Main Container */
 #newest-attraction-container {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 10vh;
-  padding-top: 10vh;
-  border-top: 2px solid var(--section-secondary);
-  }
-  
-  /* Title Only */
-  #newest-attraction-title {
-  font-size: clamp(2rem, 3vw, 4rem);
-  text-transform: uppercase;
-  font-weight: 400;
-  padding: 2vh;
-  }
-  
-  /* Image Container */
-  #newest-attraction-img-container {
-  height: 70vh;
-  overflow: hidden;
-  }
-  
-  /* Video */
-  #newest-attraction-img-container video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 0% 30%;
-  }
-  
-  /* Button Container */
-  #newest-attraction-button-container {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: center;
-  margin: 1rem 0;
-  }
-  
-  /* Button */
-  #newest-attraction-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: var(--section-primary);
-  background-color: var(--section-secondary);
-  height: 10vh;
-  width: 17vw;
-  font-size: clamp(0.8rem, 1.3vw, 1.3rem);
-  border-radius: 0.25rem;
-  text-decoration: none;
-  font-weight: 300;
-  text-transform: uppercase;
-  }
-  /*Hover code for this button is in ad button section*/
+display: flex;
+flex-direction: column;
+padding-bottom: 10vh;
+padding-top: 10vh;
+border-top: 2px solid var(--section-secondary);
+animation: 1.5s fadeInUp2;
+}
+
+/* Title Only */
+#newest-attraction-title {
+font-size: clamp(2rem, 3vw, 4rem);
+text-transform: uppercase;
+font-weight: 400;
+padding: 2vh;
+}
+
+/* Image Container */
+#newest-attraction-img-container {
+height: 70vh;
+overflow: hidden;
+}
+
+/* Video */
+#newest-attraction-img-container video {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: 0% 30%;
+}
+
+/* Button Container */
+#newest-attraction-button-container {
+display: flex;
+flex-direction: row;
+align-items: stretch;
+justify-content: center;
+margin: 1rem 0;
+}
+
+/* Button */
+#newest-attraction-button {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: var(--section-primary);
+background-color: var(--section-secondary);
+height: 10vh;
+width: 17vw;
+font-size: clamp(0.8rem, 1.3vw, 1.3rem);
+border-radius: 0.25rem;
+text-decoration: none;
+font-weight: 300;
+text-transform: uppercase;
+}
+/*Hover code for this button is in ad button section*/
+
+/*---------------------Review Section---------------------*/
+
+/* Main Container */
+#review-container {
+background-color: var(--section-secondary);
+padding: 30vh 20vw;
+animation: 1.5s fadeInUp2;
+}
+
+/* Quote Text */
+#review-quote {
+display: flex;
+font-size: clamp(2rem, 3vw, 4rem);
+color: var(--section-primary);
+text-align: center;
+}
+
+/* Site Text */
+#review-site {
+color: var(--section-primary);
+font-weight: 300;
+text-transform: uppercase;
+text-align: center;
+}
+
 
 /*---------------------Review Section---------------------*/
 
@@ -417,7 +470,8 @@ text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: var(--section-primary);
-  text-align: center;  
+  text-align: center;
+  animation: 1.5s fadeInUp2;
 }
 
 .game-list {
@@ -445,6 +499,7 @@ text-align: center;
   margin: 0 auto;
   padding: 3rem 0;
   color: inherit;
+  animation: 1.5s fadeInUp2;
 }
 
 /* Card utility classes - Coded by Joao Paulo Lousada & Craig Elliott Lawson */
@@ -707,6 +762,7 @@ text-align: center;
   font-weight: bold;
   background-color: var(--section-secondary);
   padding: 5vh;
+  animation: 1.5s fadeInUp2;
   
 }
 
@@ -726,6 +782,7 @@ text-align: center;
   margin: 0 auto;
   padding: 3em 2em;
   color: inherit;
+  animation: 1.5s fadeInUp2;
 }
 
 /* Ticket-type container holding each ticket */
@@ -872,6 +929,7 @@ text-align: center;
 
 .section {
   padding: 10px;
+  animation: 1.5s fadeInUp2;
 }
 
 .box {
@@ -883,6 +941,7 @@ text-align: center;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   grid-template-columns: 1fr 1fr;
+  animation: 1.5s fadeInUp2;
 }
 
 .list li, .list p, .margin-vision p, .values-culture p {
@@ -905,6 +964,7 @@ text-align: center;
   box-sizing: border-box;
   flex-direction: column;
   padding: 30px;
+  animation: 1.5s fadeInUp2;
 }
 
 #travel-container {
