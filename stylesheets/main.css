@@ -276,51 +276,54 @@ nav {
 
 /* About Us Main Container */
 header {
-margin: 10vh 0;
-padding: 3vh 1vw 5vh 1vw;
-border-top: 2px solid var(--section-secondary);
-border-bottom: 2px solid var(--section-secondary);
-z-index: 3;
-}
-
-/* About Us Title */
-#about-us-title {
-font-size: clamp(2rem, 3vw, 4rem);
-text-transform: uppercase;
-font-weight: 400;
-padding-bottom: 2vh;
-}
-
-/* About Us Main Text and Image Container */
-#about-us-container {
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-wrap: wrap;
-z-index: 3;
-}
-
-/* About Us Text Container */
-#about-us-text-container{
-width: 40vw;
-}
-
-/* All About Us Text (No title) */
-#about-us-desc, #about-us-where, #about-us-location {
-font-size: clamp(0.8rem, 1.5vw, 1.5rem);
-}
-#about-us-where {
-color: var(--section-secondary);
-}
-#about-us-location{
-text-transform: uppercase;
-font-weight: 300;
-}
-
-/* About Us Map Image */
-#about-us-map{
-width: 45vw;
-}
+  margin: 0 0 10vh;
+  padding: 3vh 1vw 0 1vw;
+  z-index: 3;
+  }
+  
+  /* About Us Title */
+  #about-us-title {
+  font-size: clamp(2rem, 3vw, 4rem);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding-bottom: 2vh;
+  text-decoration: none;
+  }
+  
+  /* About Us Main Text and Image Container */
+  #about-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 3;
+  }
+  
+  /* About Us Text Container */
+  #about-us-text-container{
+  width: 40vw;
+  }
+  
+  /* All About Us Text (No title) */
+  #about-us-desc, #about-us-where, #about-us-location {
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+  }
+  #about-us-where {
+  color: var(--section-secondary);
+  }
+  #about-us-location a{
+  text-transform: uppercase;
+  font-weight: 300;
+  text-decoration: none;
+  }
+  #about-us-location a:hover {
+    color: var(--section-secondary);
+  }
+  
+  /* About Us Map Image */
+  #about-us-map{
+  width: 45vw;
+  }
 
 /*---------------------Newest Attraction Section---------------------*/
 
