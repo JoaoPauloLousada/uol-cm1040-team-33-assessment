@@ -244,6 +244,8 @@ nav {
   justify-content: center;
   gap: 6vw;
   margin: 1rem 0;
+  border-bottom: 2px solid var(--section-secondary);
+  padding-bottom: 10vh;
 }
 
 /* Ad Buttons */
@@ -329,59 +331,61 @@ header {
 
 /* Newest Attraction Main Container */
 #newest-attraction-container {
-display: flex;
-flex-direction: column;
-padding-bottom: 10vh;
-}
-
-/* Title Only */
-#newest-attraction-title {
-font-size: clamp(2rem, 3vw, 4rem);
-text-transform: uppercase;
-font-weight: 400;
-padding: 2vh;
-}
-
-/* Image Container */
-#newest-attraction-img-container {
-height: 70vh;
-overflow: hidden;
-}
-
-/* Image */
-#newest-attraction-img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-object-position: 0% 10%;
-}
-
-/* Button Container */
-#newest-attraction-button-container {
-display: flex;
-flex-direction: row;
-align-items: stretch;
-justify-content: center;
-margin: 1rem 0;
-}
-
-/* Button */
-#newest-attraction-button {
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-color: var(--section-primary);
-background-color: var(--section-secondary);
-height: 10vh;
-width: 17vw;
-font-size: clamp(0.8rem, 1.3vw, 1.3rem);
-border-radius: 0.25rem;
-text-decoration: none;
-font-weight: 300;
-text-transform: uppercase;
-}
-/*Hover code for this button is in ad button section*/
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+  border-top: 2px solid var(--section-secondary);
+  }
+  
+  /* Title Only */
+  #newest-attraction-title {
+  font-size: clamp(2rem, 3vw, 4rem);
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 2vh;
+  }
+  
+  /* Image Container */
+  #newest-attraction-img-container {
+  height: 70vh;
+  overflow: hidden;
+  }
+  
+  /* Video */
+  #newest-attraction-img-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 30%;
+  }
+  
+  /* Button Container */
+  #newest-attraction-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  margin: 1rem 0;
+  }
+  
+  /* Button */
+  #newest-attraction-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--section-primary);
+  background-color: var(--section-secondary);
+  height: 10vh;
+  width: 17vw;
+  font-size: clamp(0.8rem, 1.3vw, 1.3rem);
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 300;
+  text-transform: uppercase;
+  }
+  /*Hover code for this button is in ad button section*/
 
 /*---------------------Review Section---------------------*/
 
