@@ -1,7 +1,8 @@
-/* font imports */
+/*----------------------------- GENERAL CSS SETTINGS --------------------------- */
+/* Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
-/* font classes */
+/* Font Classes */
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -32,23 +33,23 @@
   font-style: normal;
 }
 
-/* variables */
+/* Variables */
 :root {
-  /* break points */
+  /* Break Points */
   --xl: 1280px;
   --section-primary: hsl(0, 0%, 100%);
   --section-secondary: rgb(255, 128, 82);
   --text-color-primary: hsl(0, 0%, 20%);
 
 }
-/* global settings */
+/* Global Settings */
 * {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: var(--text-color-primary);
 }
 
-/* reset html and body styles */
+/* Reset HTML and Body Styles */
 html, body {
   margin: 0;
   padding: 0;
@@ -57,7 +58,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* reset list styles */
+/* Reset List Styles */
 ul {
   margin: 0;
   padding: 0;
@@ -69,7 +70,7 @@ li {
   padding: 0;
 }
 
-/* reset text */
+/* Reset Text */
 p, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -85,8 +86,10 @@ p, h1, h2, h3, h4, h5, h6 {
   color: var(--section-primary);
 }
 
-/*---------------------Nav Bar---------------------*/
+/*--------------------- NAV BAR ---------------------*/
+ /*Coded by Aydin Gursoy*/
 
+/*Main Nav container*/
 nav {
     display: flex;
     flex-direction: row;
@@ -100,7 +103,6 @@ nav {
     top: 0;
     z-index: 5;
 }
-
 
 /* Nav Bar Logo and Opening Times Section */
 #nav-logo-and-times {
@@ -130,6 +132,7 @@ nav {
     padding: 0.25rem;
     font-size: clamp(0.8rem, 1vw, 1rem);
 }
+
 /* Nav Bar Buttons when normal and hovered */
 .nav-button:link {
     color: var(--text-color-primary);
@@ -139,7 +142,8 @@ nav {
     color: var(--section-secondary);
 }
 
-/*---------------------Footer Section---------------------*/
+/*--------------------- FOOTER SECTION ---------------------*/
+ /*Coded by Aydin Gursoy*/
 
 /* Footer Main Container */
 #footer-button-list {
@@ -168,6 +172,7 @@ nav {
   padding: 0.25rem;
   font-size: clamp(0.8rem, 1vw, 1rem);
 }
+
 /* Footer Buttons when normal and hovered */
 .footer-button:link {
   color: var(--text-color-primary);
@@ -291,7 +296,7 @@ nav {
 }
 
 /* Ad Buttons on Hover AND Newest Attraction Button */
-.home-ad-buttons a:hover, #newest-attraction-button:hover{
+.home-ad-buttons a:hover, .generic-button:hover{
   background-color: rgb(227, 100, 54);
   transform: translateY(-0.1rem);
   box-shadow: 0px 3px 14px 2px rgba(0, 0, 0, 0.15);
@@ -388,7 +393,7 @@ object-position: 0% 30%;
 }
 
 /* Button Container */
-#newest-attraction-button-container {
+.generic-button-container {
 display: flex;
 flex-direction: row;
 align-items: stretch;
@@ -397,7 +402,7 @@ margin: 1rem 0;
 }
 
 /* Button */
-#newest-attraction-button {
+.generic-button {
 display: flex;
 justify-content: center;
 align-items: center;
@@ -706,34 +711,34 @@ text-align: center;
 }
 
 /* Secondary Attractions Coded by Craig Elliott Lawson */
-#secondary-attractions-list .card {
+.secondary-attractions-list .card {
     display: flex;
     flex-direction: column;
     width: 15rem;
 }
-#secondary-attractions-list {
+.secondary-attractions-list {
     display: flex;
     justify-content: space-evenly;
     column-gap: 1rem;
 }
 
-#secondary-attractions-list .card img {
+.secondary-attractions-list .card img {
     height: calc(27rem * 9/16);
     object-fit: fill;
     
 }
 
-#secondary-attractions-list .card-description {
+.secondary-attractions-list .card-description {
     background-color: var(--section-secondary);
     color: var(--section-primary);
     height: 225px;
 }
 
-#secondary-attractions-list .card:hover .card-description {
+.secondary-attractions-list .card:hover .card-description {
     height: max-content;
 }
 
-#secondary-attractions-list .pre-hover-text {
+.secondary-attractions-list .pre-hover-text {
     background-color: var(--section-secondary);
     color: var(--section-primary);
 }
@@ -899,6 +904,7 @@ text-align: center;
 /*-----------------------ABOUT PAGE STYLING-------------------------*/
 /* Coded by Abbas Motiwala and Aydin Gursoy */
 
+ /*Mission and Vision overall container*/
 .mission-vision {
   display: grid;
   grid-template-columns: 1fr 1fr; 
@@ -909,10 +915,12 @@ text-align: center;
   background-color: var(--section-secondary);
 }
 
+ /*Paragraph and h2 of mission and vision*/
 .mission-vision p, .mission-vision h2 {
   color: var(--section-primary);
 }
 
+ /*h2 of mission and vision*/
 .mission-vision h2, .values-culture h2 {
   font-size: clamp(2rem, 3vw, 4rem);
   text-transform: uppercase;
@@ -921,6 +929,7 @@ text-align: center;
   text-decoration: none;
 }
 
+ /*Values and culture overall container*/
 .values-culture {
   border-top: 2px solid var(--section-secondary);
   display: grid;
@@ -928,11 +937,13 @@ text-align: center;
   padding: 2% 2% 2% 2%;
 }
 
+ /*Separate container for mission and vision boxes*/
 .section {
   padding: 10px;
   animation: 1.5s fadeInUp2;
 }
 
+ /*Separate container for values and culture boxes*/
 .box {
   background-color: white;
   border: 1px solid #ddd;
@@ -959,7 +970,7 @@ text-align: center;
   color: #000;
 }
 
-/* How to get here section and contact section */
+/* How to get here section and contact containers */
 #travel-container, #contact-container {
   display: flex;
   box-sizing: border-box;
