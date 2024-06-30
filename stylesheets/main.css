@@ -641,6 +641,11 @@ text-align: center;
   object-fit: cover;
 }
 
+/*Prevents layout from moving when the mouse hovers over the card*/
+#restaurants-list .card-description {
+  height: 150px;
+}
+
 /* Events section style - Coded by Joao Paulo Lousada */
 #events-container {
   display: flex;
@@ -663,12 +668,15 @@ text-align: center;
 
 #events-list .card img { 
   height: 315px;
+  width: 265px;
   object-fit: cover;
 }
 
 #events-list .card-description {
     background-color: var(--section-secondary);
     color: var(--section-primary);
+    /*Prevents layout from moving when the mouse hovers over the card*/
+    height: 110px;
 }
 
 #events-list .pre-hover-text {
@@ -696,6 +704,7 @@ text-align: center;
     column-gap: 5rem;
 }
 
+/*Prevents layout from moving when the mouse hovers over the card*/
 #main-attractions-list .card-description {
     height: 225px;
 }
@@ -731,6 +740,7 @@ text-align: center;
 .secondary-attractions-list .card-description {
     background-color: var(--section-secondary);
     color: var(--section-primary);
+    /*Prevents layout from moving when the mouse hovers over the card*/
     height: 225px;
 }
 
@@ -750,8 +760,7 @@ text-align: center;
 }
 
 #disclaimer:hover {
-    transform: translateY(-0.15rem);
-          
+    transform: translateY(-0.15rem);      
 }
 
 
